@@ -2,7 +2,6 @@
 
 import { useLiveblocksExtension } from '@liveblocks/react-tiptap';
 import { useStorage } from '@liveblocks/react/suspense';
-
 import { Color } from '@tiptap/extension-color';
 import FontFamily from '@tiptap/extension-font-family';
 import Highlight from '@tiptap/extension-highlight';
@@ -77,7 +76,6 @@ export const Editor = ({ initialContent }: EditorProps) => {
       },
     },
     extensions: [
-
       Color,
       FontFamily,
       FontSizeExtension,

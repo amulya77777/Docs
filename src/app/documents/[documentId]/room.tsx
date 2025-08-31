@@ -95,8 +95,6 @@ export const Room = ({ children, roomId }: PropsWithChildren<RoomProps>) => {
   );
 };
 
-
-
 // "use client";
 
 // import { ReactNode } from "react";
