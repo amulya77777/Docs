@@ -39,7 +39,6 @@ export const Editor = ({ initialContent }: EditorProps) => {
   });
   const { setEditor } = useEditorStore();
 
-  // Type the storage root to avoid "{}" errors
   type RootStorage = { leftMargin?: number; rightMargin?: number };
 
   const leftMarginVal = useStorage((root: RootStorage) => root.leftMargin ?? editorMargin);
