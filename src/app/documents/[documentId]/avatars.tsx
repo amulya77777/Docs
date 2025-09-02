@@ -1,11 +1,8 @@
-// src/app/documents/[documentId]/avatars.tsx
 'use client';
 
 import { ClientSideSuspense, useOthers, useSelf } from '@liveblocks/react/suspense';
 
 import { Separator } from '@/components/ui/separator';
-
-// src/app/documents/[documentId]/avatars.tsx
 
 const AVATAR_SIZE = 36;
 
@@ -24,7 +21,6 @@ export const Avatars = () => {
 };
 
 const AvatarStack = () => {
-  // Select & type the data we actually use to avoid '{}' errors
   const users = useOthers((others) =>
     others.map((o) => ({
       connectionId: o.connectionId,
